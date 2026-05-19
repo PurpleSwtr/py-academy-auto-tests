@@ -1,0 +1,32 @@
+[
+  {
+    "result": "None",
+    "expected": "True",
+    "input": "user123@example.com",
+    "success": false
+  },
+  {
+    "result": "None",
+    "expected": "False",
+    "input": "user.name@company.com",
+    "success": false
+  },
+  {
+    "result": "None",
+    "expected": "False",
+    "input": "username@website.extension",
+    "success": false
+  },
+  {
+    "result": "None",
+    "expected": "False",
+    "input": "user@domain",
+    "success": false
+  },
+  {
+    "result": "None",
+    "expected": "True",
+    "input": "user-name_123@domain99.co",
+    "success": false
+  }
+]

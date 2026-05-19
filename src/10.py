@@ -1,11 +1,12 @@
-# Подсказка: можно использовать модуль calendar
-# import calendar
+import calendar
 
 date_input = input().split()
 month = int(date_input[0])
 day = int(date_input[1])
 year = int(date_input[2])
 
-# Ваш код здесь
+day_num = calendar.weekday(year, month, day)
 
-print("ДЕНЬ_НЕДЕЛИ")
+day_name = calendar.day_name[day_num].upper()
+
+print(day_name)
