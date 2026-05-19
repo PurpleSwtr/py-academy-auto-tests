@@ -1,9 +1,6 @@
 n = int(input())
 scores = list(map(int, input().split()))
 
-# Реализуйте поиск второго максимума
+sc = sorted(set(scores))
 
-s = set(sorted(scores))
-
-
-print(s)
+print(list(sc)[-2])

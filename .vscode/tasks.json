@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run Task",
+      "type": "shell",
+      "command": "uv",
+      "args": ["run", "python", "utils/run.py"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Next Task",
+      "type": "shell",
+      "command": "uv",
+      "args": ["run", "python", "utils/complete.py"],
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      }
+    }
+  ]
+}
