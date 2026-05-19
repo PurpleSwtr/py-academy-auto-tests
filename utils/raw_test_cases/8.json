@@ -1,0 +1,26 @@
+[
+  {
+    "result": "ABCD\nEFGH\nIJKL\nIMNО\nQRST\nUVWX\nYZ",
+    "expected": "ABCD\nEFGH\nIJKL\nIMNО\nQRST\nUVWX\nYZ",
+    "input": "ABCDEFGHIJKLIMNОQRSTUVWXYZ\n4",
+    "success": true
+  },
+  {
+    "result": "Hello\n Worl\nd!",
+    "expected": "Hello\n Worl\nd!",
+    "input": "Hello World!\n5",
+    "success": true
+  },
+  {
+    "result": "Python",
+    "expected": "Python",
+    "input": "Python\n10",
+    "success": true
+  },
+  {
+    "result": "a\nb\nc\nd\ne\nf\ng\nh\ni\nj",
+    "expected": "a\nb\nc\nd\ne\nf\ng\nh\ni\nj",
+    "input": "abcdefghij\n1",
+    "success": true
+  }
+]

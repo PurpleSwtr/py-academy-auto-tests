@@ -5,10 +5,30 @@
       "label": "Run Task",
       "type": "shell",
       "command": "uv",
-      "args": ["run", "python", "utils/run.py"],
       "group": {
         "kind": "build",
-        "isDefault": true
+        "args": ["run", "python", "utils/run.py"],
+        "isDefault": false
+      }
+    },
+    {
+      "label": "Test Current",
+      "type": "shell",
+      "command": "uv",
+      "args": ["run", "pytest", "tests/tests_one.py", "-v"],
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      }
+    },
+    {
+      "label": "Test All",
+      "type": "shell",
+      "command": "uv",
+      "args": ["run", "pytest", "tests/tests_all.py", "-v"],
+      "group": {
+        "kind": "build",
+        "isDefault": false
       }
     },
     {
