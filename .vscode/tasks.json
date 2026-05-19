@@ -7,7 +7,7 @@
       "command": "uv",
       "group": {
         "kind": "build",
-        "args": ["run", "python", "utils/run.py"],
+        "args": ["run", "pytest", "tests/tests_one.py", "-v"],
         "isDefault": false
       }
     },
@@ -40,6 +40,33 @@
         "kind": "build",
         "isDefault": false
       }
+    },
+    {
+      "label": "Switch Task To...",
+      "type": "shell",
+      "command": "uv",
+      "args": ["run", "python", "utils/switch_task.py", "${input:task}"],
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      }
+    },
+    {
+      "label": "Add New Tests",
+      "type": "shell",
+      "command": "uv",
+      "args": ["run", "python", "utils/json_to_tests.py"],
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "id": "task",
+      "description": "Введите задачу:",
+      "type": "promptString"
     }
   ]
 }

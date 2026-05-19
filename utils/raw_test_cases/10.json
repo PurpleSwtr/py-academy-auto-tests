@@ -1,0 +1,32 @@
+[
+  {
+    "result": "ДЕНЬ_НЕДЕЛИ",
+    "expected": "WEDNESDAY",
+    "input": "08 05 2015",
+    "success": false
+  },
+  {
+    "result": "ДЕНЬ_НЕДЕЛИ",
+    "expected": "SUNDAY",
+    "input": "12 25 2022",
+    "success": false
+  },
+  {
+    "result": "ДЕНЬ_НЕДЕЛИ",
+    "expected": "SATURDAY",
+    "input": "01 01 2000",
+    "success": false
+  },
+  {
+    "result": "ДЕНЬ_НЕДЕЛИ",
+    "expected": "TUESDAY",
+    "input": "07 04 2023",
+    "success": false
+  },
+  {
+    "result": "ДЕНЬ_НЕДЕЛИ",
+    "expected": "SATURDAY",
+    "input": "02 29 2020",
+    "success": false
+  }
+]

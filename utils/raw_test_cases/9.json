@@ -1,0 +1,26 @@
+[
+  {
+    "result": "None",
+    "expected": "1",
+    "input": "a,a,a,b,b,b,b,c,c,c,c,c",
+    "success": false
+  },
+  {
+    "result": "None",
+    "expected": "2",
+    "input": "a,b,c,a,b,c,c,c",
+    "success": false
+  },
+  {
+    "result": "None",
+    "expected": "4",
+    "input": "x,x,x,x,y,y,y,y,z,z,z,z",
+    "success": false
+  },
+  {
+    "result": "None",
+    "expected": "6",
+    "input": "a,a,a,a,a,a",
+    "success": false
+  }
+]

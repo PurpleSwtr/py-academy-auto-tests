@@ -1,0 +1,26 @@
+[
+  {
+    "result": "",
+    "expected": "WWW.pYTHON-aCADEMY.ORG",
+    "input": "www.Python-Academy.org",
+    "success": false
+  },
+  {
+    "result": "",
+    "expected": "pYTHON 3.9",
+    "input": "Python 3.9",
+    "success": false
+  },
+  {
+    "result": "",
+    "expected": "hello WORLD!",
+    "input": "HELLO world!",
+    "success": false
+  },
+  {
+    "result": "",
+    "expected": "ABCdef123",
+    "input": "abcDEF123",
+    "success": false
+  }
+]
