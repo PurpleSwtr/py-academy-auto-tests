@@ -32,5 +32,5 @@ if __name__ == "__main__":
             f"Вы не можете создавать задачи с не целочисленными значениями! {e}"
         )
     add_task_tests(name, sys.argv[2].strip())
-    subprocess.run([sys.executable, UTILS / "json_to_tests.py", sys.argv[2].strip()])
-    subprocess.run([sys.executable, UTILS / "switch_task.py", str(name)])
+    subprocess.run([sys.executable, UTILS / "json_to_tests.py"])
+    subprocess.run([sys.executable, UTILS / "switch_task.py", str(name), sys.argv[3]])

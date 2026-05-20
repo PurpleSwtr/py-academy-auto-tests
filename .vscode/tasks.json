@@ -60,7 +60,8 @@
         "python",
         "utils/add.py",
         "${input:json_path}",
-        "${input:json_raw}"
+        "${input:json_raw}",
+        "${input:task_text}"
       ],
       "group": {
         "kind": "build",
@@ -77,6 +78,11 @@
     {
       "id": "json_path",
       "description": "Введите задачу для которой хотите добавить тесты:",
+      "type": "promptString"
+    },
+    {
+      "id": "task_text",
+      "description": "Введите текст задачи:",
       "type": "promptString"
     },
     {

@@ -39,8 +39,20 @@ def switch_task(task_id: str):
     print(f"Текущая задача: {task_id}")
 
 
+def add_task_text(task_id: str, text: str) -> None:
+    from bs4 import BeautifulSoup
+
+    soup = BeautifulSoup(text, "html.parser")
+    formatted_html = soup.prettify()
+
+    with open(SRC_DIR / "tasks" / f"{task_id}.md", "w", encoding="utf-8") as f:
+        f.write(formatted_html)
+
+
 if __name__ == "__main__":
     if len(sys.argv) < 2:
         sys.exit(1)
 
     switch_task(sys.argv[1].strip())
+    if len(sys.argv) > 2:
+        add_task_text(sys.argv[1].strip(), sys.argv[2])
