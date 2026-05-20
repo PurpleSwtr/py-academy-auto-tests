@@ -55,7 +55,13 @@
       "label": "Add New Tests",
       "type": "shell",
       "command": "uv",
-      "args": ["run", "python", "utils/json_to_tests.py"],
+      "args": [
+        "run",
+        "python",
+        "utils/add_raw.py",
+        "${input:json_path}",
+        "${input:json_raw}"
+      ],
       "group": {
         "kind": "build",
         "isDefault": false
@@ -66,6 +72,16 @@
     {
       "id": "task",
       "description": "Введите задачу:",
+      "type": "promptString"
+    },
+    {
+      "id": "json_path",
+      "description": "Введите задачу для которой хотите добавить тесты:",
+      "type": "promptString"
+    },
+    {
+      "id": "json_raw",
+      "description": "Введите json-объект с сайта:",
       "type": "promptString"
     }
   ]
