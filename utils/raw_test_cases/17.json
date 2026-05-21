@@ -1,0 +1,44 @@
+[
+    {
+        "result": "None",
+        "expected": "True",
+        "input": "racecar",
+        "success": false
+    },
+    {
+        "result": "None",
+        "expected": "True",
+        "input": "level",
+        "success": false
+    },
+    {
+        "result": "None",
+        "expected": "False",
+        "input": "hello",
+        "success": false
+    },
+    {
+        "result": "None",
+        "expected": "True",
+        "input": "Madam",
+        "success": false
+    },
+    {
+        "result": "None",
+        "expected": "True",
+        "input": "Radar",
+        "success": false
+    },
+    {
+        "result": "None",
+        "expected": "False",
+        "input": "programming",
+        "success": false
+    },
+    {
+        "result": "None",
+        "expected": "True",
+        "input": "deed",
+        "success": false
+    }
+]

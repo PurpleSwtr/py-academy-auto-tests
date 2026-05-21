@@ -1,0 +1,38 @@
+[
+    {
+        "result": "None",
+        "expected": "5",
+        "input": "5 2 9 1 7",
+        "success": false
+    },
+    {
+        "result": "None",
+        "expected": "4.5",
+        "input": "4 1 8 5",
+        "success": false
+    },
+    {
+        "result": "None",
+        "expected": "6",
+        "input": "6 6 6 6 6",
+        "success": false
+    },
+    {
+        "result": "None",
+        "expected": "7.5",
+        "input": "7 8",
+        "success": false
+    },
+    {
+        "result": "None",
+        "expected": "3",
+        "input": "1 3 6 5 2",
+        "success": false
+    },
+    {
+        "result": "None",
+        "expected": "4",
+        "input": "1 2 6 9",
+        "success": false
+    }
+]

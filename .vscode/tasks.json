@@ -52,7 +52,7 @@
       }
     },
     {
-      "label": "Add New Tests",
+      "label": "Add New Task",
       "type": "shell",
       "command": "uv",
       "args": [
@@ -73,7 +73,9 @@
     {
       "id": "task",
       "description": "Введите задачу:",
+      // "type": "pickString",
       "type": "promptString"
+      // "options": []
     },
     {
       "id": "json_path",
